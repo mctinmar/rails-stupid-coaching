@@ -1,0 +1,24 @@
+<h1 class="text-center">My stupid Coach </h1>
+<div class="container">
+  <div class="coach-question">
+    <p><%= @question %></p>
+    <p><i>- You</i></p>
+  </div>
+
+  <div class="coach-answer">
+    <p><%= @answer %></p>
+    <p><i>- Your Coach</i></p>
+
+  </div>
+
+  <form class="form-inline" action="/answer" method="get">
+    <input class="form-control" type="text" name="question" placeholder="What is your question?">
+    <input class="btn btn-primary" type="submit">
+  </form>
+
+  <br />
+
+<%= link_to "Ask a new question", "/ask" %>
+
+</div>
+
